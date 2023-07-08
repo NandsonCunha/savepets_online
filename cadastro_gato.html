@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Gatinho</title>
+    <link rel="stylesheet" type="text/css" href="cg_style.css">
+    <link rel="icon" type="image/png" href="mdi_cat.png">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a class="logo" href="#"><img class="logo" src="Adote Aqui!.png" alt="Logo"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Adotar</a></li>
+            <li><a href="cadastro_gato.html">Colocar para Adoção</a></li>
+            <li><a href="perdido.html">Perdidos</a></li>
+            <li class="login-icon">
+                <a href="cadastro.html"><img class="perfil" src="user-solid.svg" alt="perfil"></a>
+            </li>
+            <li class="search-bar">
+                <input class="search-barra" type="text" placeholder="Pesquisar">
+                <a class="icon-pesquisar-a" href=""><img class="icon-pesquisar" src="magnifying-glass-solid.svg" alt=""></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="form-cadastro">
+        <form >
+
+            <div>
+                <label for="nome"><strong>Nome do Gatinho:</strong></label>
+                <br>
+                <input class="imput-form" type="text" name="nome" id="nome" placeholder="Nome" required>
+            </div>
+            <label for="dt-nascimento"><strong>Data Nascimento:</strong></label>
+            <input class="imput-form"  type="date" id="birthday" name="dt-nascimento">
+            <div>
+                <label for="raca"><strong>Raça</strong></label>
+                <br>
+                <input class="imput-form" type="text" name="raca" id="raca" placeholder="Raça" required>
+            </div>
+            <div>
+                <label for="endereco"><strong>Endereço</strong></label>
+                <br>
+                <input class="imput-form" type="text" name="endereco" id="endereco" placeholder="Endereço" required>
+            </div>
+            <div class="campo" >
+                <label><strong>Tem alguma necessidade? </strong> </label>
+                <br><br>
+                <input type="radio" name="sim" value="sim">SIM
+                <input type="radio" name="nao" value="nao">NÃO
+            </div>
+            <br>
+            <div class="campo">
+                <label for="sexo"><strong>Sexo</strong></label>
+                <select class="imput-form" id="sexo">
+                    <option selected disabled value=""> Selecione </option>
+                    <option> Macho</option>
+                    <option> Fêmea </option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <br>
+                <label><strong>Descrição</strong></label>
+                <textarea class="imput-form" rows="4" style="width: 26em;" id="experiencia" nome="experiencia"></textarea>
+            </div><br>
+
+            <label for="img-gato"> <strong>Selecione uma foto:</strong></label>
+            <div class="envia-foto">
+                
+                <input type="file" id="img-gato" name="img-gato" accept="image/*">
+            </div><br><br>
+            
+
+            <button class="imput-form" class="botao" type="submit"><strong>Concluído</strong></button>
+        </form>
+    </div>
+        
+    
+</body>
+</html>
